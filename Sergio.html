@@ -23,45 +23,45 @@
           </div>
         </div>
       </nav>
-      <div class="text-center">
-        <h1>Galeria!</h1>
-    </div>
-
-    <div class="btn-group">
-      
-      
-    </div>
-
-
-    <div class="container">
-      <div class="card-columns" id="Galeria">
-
-            <script>
-                var imagenes=[1,2,3,4,5];
-                var galeria = document.getElementById('Galeria');
-                for(imagen of imagenes){
-                  galeria.innerHTML += `
-                  <div class="card">
-              <a href="#" data-toggle="modal" data-target="#id${imagen}">
-              <img src="Galeria/${imagen}.jpg" alt="card-img-top">
-              </a>
-          </div>    
-          <!-- Clase Modal -->
-          <div class="modal fade" id="id${imagen}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-
-              <button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-
-              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                <img src="Galeria/${imagen}.jpg" alt="" class="img-fluid rounded">
-              </div>
-            </div>
-                  `
-                }
-            </script>
-
-          </div>
+   <div class="text-center">
+          <h1>Galeria!</h1>
       </div>
+
+      <div class="btn-group">
+        
+        
+      </div>
+
+
+      <div class="container">
+        <div class="card-columns" id="Galeria">
+
+              <script>
+                  var imagenes=[1,2,3,4,5];
+                  var galeria = document.getElementById('Galeria');
+                  for(imagen of imagenes){
+                    galeria.innerHTML += `
+                    <div class="card">
+                <a href="#" data-toggle="modal" data-target="#id${imagen}">
+                <img src="Galeria/${imagen}.jpg" alt="card-img-top">
+                </a>
+            </div>    
+            <!-- Clase Modal -->
+            <div class="modal fade" id="id${imagen}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                <button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                  <img src="Galeria/${imagen}.jpg" alt="" class="img-fluid rounded">
+                </div>
+              </div>
+                    `
+                  }
+              </script>
+
+            </div>
+        </div>
 </body>
 </html>
