@@ -1,53 +1,67 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
+<head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-    <title>Galeria</title>
-  </head>
-  <body>
-      <div class="text-center">
-          <h1>Galeria!</h1>
-      </div>
-
-      <div class="btn-group">
-        
-        
-      </div>
-
-
-      <div class="container">
-        <div class="card-columns" id="Galeria">
-
-              <script>
-                  var imagenes=[1,2,3,4,5];
-                  var galeria = document.getElementById('Galeria');
-                  for(imagen of imagenes){
-                    galeria.innerHTML += `
-                    <div class="card">
-                <a href="#" data-toggle="modal" data-target="#id${imagen}">
-                <img src="Galeria/${imagen}.jpg" alt="card-img-top">
-                </a>
-            </div>    
-            <!-- Clase Modal -->
-            <div class="modal fade" id="id${imagen}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-
-                <button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-
-                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                  <img src="Galeria/${imagen}.jpg" alt="" class="img-fluid rounded">
-                </div>
-              </div>
-                    `
-                  }
-              </script>
-
-            </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergio</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navegacíon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="./geovani.html">Geovani</a>
+            <a class="nav-link" href="./Angel-Ponce.html">Angel</a>
+            <a class="nav-link" href="./carlos-dubon.html">Carlos</a>
+            <a class="nav-link" href="./jhonatan.html">Jhonatan</a>
+            <a class="nav-link active" href="./Sergio.html">Sergio</a>
+          </div>
         </div>
+      </nav>
+      <div class="text-center">
+        <h1>Galeria!</h1>
+    </div>
+
+    <div class="btn-group">
+      
+      
+    </div>
+
+
+    <div class="container">
+      <div class="card-columns" id="Galeria">
+
+            <script>
+                var imagenes=[1,2,3,4,5];
+                var galeria = document.getElementById('Galeria');
+                for(imagen of imagenes){
+                  galeria.innerHTML += `
+                  <div class="card">
+              <a href="#" data-toggle="modal" data-target="#id${imagen}">
+              <img src="Galeria/${imagen}.jpg" alt="card-img-top">
+              </a>
+          </div>    
+          <!-- Clase Modal -->
+          <div class="modal fade" id="id${imagen}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+              <button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <img src="Galeria/${imagen}.jpg" alt="" class="img-fluid rounded">
+              </div>
+            </div>
+                  `
+                }
+            </script>
+
+          </div>
+      </div>
+</body>
+</html>
