@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
     />
     <title>Carlos Dubón</title>
   </head>
@@ -13,11 +15,11 @@
     <style>
       body {
         background-color: rgb(250, 250, 250);
-        font-family: "Poppins", sans-serif;
         color: #3a3a3a;
         box-sizing: border-box;
-        margin: 0;
-        padding: 1em;
+      }
+      .main {
+        padding: 2em;
       }
       h1 {
         font-weight: 300;
@@ -53,13 +55,44 @@
         background-color: #49af49;
       }
     </style>
-    <h1>
-      Taller de git con <a href="https://github.com/yovafree">yova-free</a> 😄
-    </h1>
-    <h3>
-      📁 Carpeta de <a href="https://carlos-dubon.github.io/">carlos-dubon</a>
-    </h3>
-    <button onclick="easterEgg()">Hola 💡</button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navegacíon</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="./index.html"
+            >Inicio <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-link" href="./geovani.html">Geovani</a>
+          <a class="nav-link" href="./Angel-Ponce.html">Angel</a>
+          <a class="nav-link active" href="./carlos-dubon.html">Carlos</a>
+          <a class="nav-link" href="./jhonatan.html">Jhonatan</a>
+          <a class="nav-link" href="./Sergio.html">Sergio</a>
+        </div>
+      </div>
+    </nav>
+    <div class="main">
+      <h1>
+        Taller de git con <a href="https://github.com/yovafree">yova-free</a> 😄
+      </h1>
+      <h3>
+        📁 Carpeta de <a href="https://carlos-dubon.github.io/">carlos-dubon</a>
+      </h3>
+      <button onclick="easterEgg()">Hola 💡</button>
+    </div>
+    <img src="./images/chrome.png" alt="">
+    <img src="./images/pan.png" alt="">
+    <img src="./images/M.png" alt="">
     <script>
       function easterEgg() {
         alert("Hola extraño :)");

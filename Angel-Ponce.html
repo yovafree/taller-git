@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -14,14 +15,34 @@
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             background-color: black;
             color: white;
+            flex-direction: column;
         }
     </style>
     <title>Angel Ponce</title>
 </head>
 <body>
-    <div class="hi">HOLA! SOY ANGEL PONCE</div>
-    <div class="caja1"></div>
-    <div class="caja2"></div>
-    <div class="caja3"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navegacíon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="./geovani.html">Geovani</a>
+            <a class="nav-link active" href="./Angel-Ponce.html">Angel</a>
+            <a class="nav-link" href="./carlos-dubon.html">Carlos</a>
+            <a class="nav-link" href="./jhonatan.html">Jhonatan</a>
+            <a class="nav-link" href="./Sergio.html">Sergio</a>
+          </div>
+        </div>
+      </nav>
+    <div class="hi">
+        HOLA! SOY ANGEL PONCE
+        <img src="./images/pan.png" alt="">
+        <img src="./images/cat.png" alt="">
+        <img src="./images/angel.jpg" alt="">
+    </div>
+    
 </body>
 </html>
